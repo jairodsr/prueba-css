@@ -1,0 +1,192 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .stage {
+    width: 100%;
+    height: 100vh;
+    /*background: rgb(2, 0, 36);
+    background: linear-gradient(
+      180deg,
+      rgba(2, 0, 36, 1) 0%,
+      rgba(9, 9, 121, 1) 35%,
+      rgba(0, 212, 255, 1) 100%
+    );*/
+    background: rgb(14, 14, 19);
+    background: linear-gradient(
+      180deg,
+      rgba(14, 14, 19, 1) 0%,
+      rgba(16, 21, 55, 1) 53%,
+      rgba(13, 79, 191, 1) 100%
+    );
+    position: relative;
+  }
+  
+  .cloud {
+    width: 150px;
+    height: 100px;
+    position: absolute;
+  }
+  
+  #cloud1 {
+    left: 0%;
+    top: 2%;
+    width: 200px;
+    height: 210px;
+  }
+  
+  #cloud2 {
+    left: 45%;
+    top: 2%;
+    width: 300px;
+    height: 300px;
+  }
+  #cloud3 {
+    left: 52%;
+    top: 0%;
+    width: 300px;
+    height: 300px;
+    transform: rotate(180deg);
+  }
+  
+  #cloud4 {
+    left: 18%;
+    top: 10%;
+    width: 300px;
+    height: 250px;
+    transform: rotate(360deg);
+  }
+  
+  .cloud .circle {
+    background-color: rgba(14, 16, 40, 1);
+    position: absolute;
+    color: white;
+  }
+  
+  .circle {
+    border-radius: 50%;
+  }
+  
+  .circle1 {
+    top: 30%;
+    left: 1%;
+  }
+  
+  .circle2 {
+    top: 15%;
+    left: 30%;
+  }
+  .circle3 {
+    top: 30%;
+    right: 20%;
+  }
+  
+  .s30 {
+    width: 30%;
+    height: 30%;
+  }
+  
+  .s50 {
+    width: 50%;
+    height: 50%;
+  }
+  
+  .s40 {
+    width: 40%;
+    height: 40%;
+  }
+  
+  .moon {
+    width: 250px;
+    height: 250px;
+    background-color: black;
+    position: relative;
+    top: 5%;
+    left: 30%;
+    display: none;
+  }
+  
+  .stars {
+    width: 100%;
+    height: 30vh;
+    position: absolute;
+    top: 0;
+  }
+  
+  .stars .star {
+    font-size: 3rem;
+    position: absolute;
+  }
+  
+  #star1 {
+    font-size: 2rem;
+    left: 28%;
+    top: 40%;
+  }
+  
+  #star2 {
+    font-size: 2rem;
+    left: 60%;
+    top: 2%;
+  }
+  #star3 {
+    font-size: 1rem;
+    left: 9%;
+  }
+  
+  #star4 {
+    top: 70%;
+    right: 5%;
+  }
+  
+  #star5 {
+    top: 20%;
+    right: 10%;
+  }
+  
+  #star6 {
+    right: 20%;
+    top: 50%;
+  }
+  
+  .stars .star i {
+    font-size: 1em;
+    animation-name: ligth;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+  }
+  
+  .fa-moon {
+    font-size: 10rem;
+    position: absolute;
+    right: 8%;
+    top: 15%;
+    color: white;
+  }
+  
+  @keyframes ligth {
+    0% {
+      font-size: 0.5rem;
+      fill: white;
+      color: gray;
+    }
+    15% {
+      font-size: 1rem;
+      color: white;
+    }
+    30% {
+      font-size: 1.5rem;
+      color: gray;
+    }
+    55% {
+      font-size: 1rem;
+      color: white;
+    }
+    100% {
+      font-size: 0.5rem;
+      color: yellow;
+    }
+  }
+  
